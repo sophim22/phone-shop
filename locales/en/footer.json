@@ -1,0 +1,42 @@
+{
+  "account": {
+    "header": "My account",
+    "accountUrl": {
+      "li1": "Refund policy",
+      "li2": "Login",
+      "li3": "Order status",
+      "li4": "Site Map"
+    }
+  },
+  "information": {
+    "header": "Information",
+    "informationUrl": {
+      "li1": "Blog",
+      "li2": "Jobs",
+      "li3": "FAQ",
+      "li4": "Privacy Policy"
+    }
+  },
+  "socialMedia": {
+    "header": "Social Media",
+    "socialMediaUrl": {
+      "li1": "facebook",
+      "li2": "instagram",
+      "li3": "linkedin",
+      "li4": "pinterest"
+    }
+  },
+  "delivery": {
+    "title": "Free Delivery",
+    "text": "And free returns. See checkout for delivery dates."
+  },
+  "payment": {
+    "title": "Pay montly 0% APR",
+    "text": "Choose to check out with Apple Card Monthly Installments."
+  },
+  "personal": {
+    "title": "Personalize it",
+    "text": "Engrave your device with your name or a personal note"
+  },
+  "subscribe": "Subscribe."
+}

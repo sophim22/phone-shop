@@ -1,0 +1,361 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer {
+  background:  #eeeeee;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 768px) { 
+  .toggle-active {
+    display: block;
+  }
+  .toggle-inactive {
+    display: block;
+  }
+}
+.toggle-active {
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+}
+.toggle-inactive {
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+  display: none;
+}
+#banner-container:hover .banner-icon {
+  display: block;
+}
+.animate__animated.animate__slideInUp {
+  --animate-duration: 0.5s;
+}
+
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 0.4s;
+}
+
+.animate__animated.animate__slideInRight {
+  --animate-duration: 0.4s;
+}
+
+.menu-inactive {
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: -20rem;
+  z-index: 30;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-active {
+  transition: 1s;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 30;
+  margin: auto;
+  left: 0;
+  background: white;
+}
+
+.banner-icon {
+  box-shadow: 2px 3px 5px 2px #888888;
+  display: none;
+}
+.banner-icon:hover {
+  cursor: pointer;
+  background: black;
+}
+.banner-icon:hover .slide-left {
+  transition: 0.4s;
+  color: white;
+}
+
+.banner-icon:hover .slide-right {
+  transition: 0.4s;
+  color: white;
+}
+
+.card-container:hover .card-image {
+  transition-duration: 500ms;
+  transition-delay: 300ms ease-in-out;
+  transform: scale(1.25);
+}
+
+.card-image {
+  transition-duration: 500ms;
+  transition-delay: 300ms ease-in-out;
+}
+
+.card-container:hover .card-body {
+  border: 2px solid white;
+  transition-duration: 500ms;
+  transition-delay: 300ms ease-in-out;
+}
+
+.card-body {
+  transition-duration: 500ms;
+  transition-delay: 300ms ease-in-out;
+}
+
+.product-card:hover .card-options {
+  transition-duration: 700ms;
+  opacity: 1;
+  height: auto;
+  display: block;
+  position: absolute;
+  transform: translateY(-20%);
+  padding-bottom: 1rem;
+}
+
+.card-options {
+  transition-duration: 700ms;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(20%);
+  position: absolute;
+}
+.product-card:hover .card-title{
+  transition-duration: 700ms;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(-50%);
+  position: absolute;
+  top: -20%;
+}
+.card-title {
+  transition-duration: 700ms;
+  opacity: 1;
+  height: auto;
+  overflow: block;
+  transform: translateY(0);
+  position: absolute;
+  top: 0%;
+  padding-bottom: 1rem;
+}
+
+.product-card:hover .product-options {
+  transition-duration: 700ms;
+  opacity: 1;
+  height: 20%;
+  position: absolute;
+  transform: translateY(0);
+  width: 100%;
+  bottom: 5%;
+}
+
+.product-options {
+  transition-duration: 700ms;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(20%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.product-card:hover .card-icons {
+  transition-duration: 700ms;
+  opacity: 1;
+  height: 60%;
+  position: absolute;
+  transform: translateY(0%);
+  right: 0%;
+  top: 0;
+}
+
+.card-icons {
+  transition-duration: 700ms;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(20%);
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+
+.arrow {
+  color: white;
+}
+
+.previouse-icon, .next-icon {
+  box-shadow: 2px 3px 5px 2px #888888;
+  background: white;
+  transition-duration: 700ms;
+  opacity: 0;
+  height: 3rem;
+  width: 3rem;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 100%;
+  color: #888888;
+}
+.previouse-icon {
+  transform: translateX(-50%);
+}
+.next-icon {
+  transform: translateX(50%);
+}
+#banner-container:hover .next-icon {
+  transition-duration: 700ms;
+  opacity: 1;
+  padding: 10px;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 100%;
+  transform: translateX(0%);
+}
+#banner-container:hover .previouse-icon {
+  transition-duration: 700ms;
+  opacity: 1;
+  padding: 10px;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 100%;
+  transform: translateX(0%);
+}
+
+.curren-menu-active {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.curren-menu-inactive {
+  color: rgb(150, 150, 150);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+#recent-product:hover .next-icon {
+  transition-duration: 700ms;
+  opacity: 1;
+  padding: 10px;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 100%;
+  transform: translateX(0%);
+}
+#recent-product:hover .previouse-icon {
+  transition-duration: 700ms;
+  opacity: 1;
+  padding: 10px;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  border-radius: 100%;
+  transform: translateX(0%);
+}
+
+.container-active {
+  transition: 1s;
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+}
+.container-inactive {
+  transition: 1s;
+  position: fixed;
+  top: 0%;
+  z-index: 20;
+  width: 0%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);  
+  display: none;
+  right: 0%;
+
+}
+.cart-inactive {
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  z-index: 30;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-active {
+  transition: 1s;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: auto;
+  z-index: 50;
+  margin: auto;
+  right: 0;
+  background: white;
+}
+
+
+.search-inactive {
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  z-index: 50;
+  background: rgb(223, 223, 223);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  right: -100%;
+}
+
+.search-active {
+  transition: 1s;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 50;
+  margin: auto;
+  background: white;
+  width: 100%;
+  right: 0%;
+}
