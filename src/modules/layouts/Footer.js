@@ -88,7 +88,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="#" className="hover:text-red-400">
-                {t("information.informationUrl.li4")}
+                {t("information.informationUrl.li3")}
               </a>
             </li>
             <li>
